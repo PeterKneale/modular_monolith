@@ -1,0 +1,13 @@
+﻿@page
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using TagHelperPack
+@model View
+@{
+    ViewBag.Title = "View student";
+}
+
+<form>
+    <display for="FirstName"/>
+    <display for="LastName"/>
+    <a asp-page="Edit" asp-route-id="@Model.Id">Edit</a>
+</form>

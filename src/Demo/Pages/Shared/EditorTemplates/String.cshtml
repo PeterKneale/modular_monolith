@@ -1,0 +1,8 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model string
+
+<div class="mb-3">
+    <label asp-for="@Model" class="form-label"></label>
+    <input asp-for="@Model" class="form-control"/>
+    <span asp-validation-for="@Model"></span>
+</div>
